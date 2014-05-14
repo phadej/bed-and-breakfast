@@ -1,7 +1,7 @@
 {-# LANGUAGE Haskell2010, TemplateHaskell #-}
 
 module Numeric.Matrix.Sugar (
-        iMatrix, dMatrix
+        iMatrix, dMatrix, cMatrix
     ) where
 
 import Numeric.Matrix
@@ -20,6 +20,10 @@ iMatrix = QuasiQuoter
 
 dMatrix = QuasiQuoter
             (quoter (read :: ReadM Double))
+            undefined undefined undefined
+
+cMatrix = QuasiQuoter
+            (quoter (read :: ReadM (Complex Double)))
             undefined undefined undefined
 
 quoter :: (Data e, MatrixElement e)
