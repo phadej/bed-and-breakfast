@@ -1,6 +1,8 @@
 bed-and-breakfast
 =================
 
+[![Build Status](https://travis-ci.org/phadej/bed-and-breakfast.svg?branch=master)](https://travis-ci.org/phadej/bed-and-breakfast)
+
 Matrix operations in 100% pure Haskell.
 
 Bed and Breakfast is a linear algebra library written in Haskell.
